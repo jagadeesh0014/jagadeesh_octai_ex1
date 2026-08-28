@@ -17,7 +17,7 @@ This project provisions a complete AWS infrastructure using Terraform including 
 
 ```bash
 git clone https://github.com/jagadeesh0014/jagadeesh_octai_ex1.git
-cd exercise-1
+cd jagadeesh_octai_ex1
 
 terraform init
 terraform plan
