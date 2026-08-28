@@ -23,6 +23,8 @@ This project provisions a complete AWS infrastructure on AWS using Terraform, in
   - RDS
   - ALB
   - S3
+- Create an S3 bucket to store the Terraform state (terraform.tfstate) file and enable versioning to maintain state history and support recovery from accidental changes.
+
 
 ### Deployment Steps
 
