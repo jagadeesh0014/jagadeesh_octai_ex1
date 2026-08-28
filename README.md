@@ -24,7 +24,17 @@ This project provisions a complete AWS infrastructure on AWS using Terraform, in
   - ALB
   - S3
 - Create an S3 bucket to store the Terraform state (terraform.tfstate) file and enable versioning to maintain state history and support recovery from accidental changes.
+```bash
+# S3 bucket create
+aws s3 mb s3://jagadeesh-terraform-state-837567124319 --region ap-south-1
 
+# Versioning ON
+aws s3api put-bucket-versioning --bucket jagadeesh-terraform-state-837567124319 --versioning-configuration Status=Enabled --region ap-south-1
+
+# Verify
+aws s3 ls
+# jagadeesh-terraform-state-837567124319 done
+```
 
 ### Deployment Steps
 
