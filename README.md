@@ -11,11 +11,12 @@ This project provisions a complete AWS infrastructure using Terraform including 
 - AWS CLI configured with valid credentials
 - Terraform >= 1.5
 - IAM permissions for EC2, VPC, RDS, ALB, and S3
+- Create an S3 bucket to store the Terraform state (`terraform.tfstate`) file and enable versioning to maintain state history and support recovery from accidental changes.
 
 ### Deployment Steps
 
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/jagadeesh0014/jagadeesh_octai_ex1.git
 cd exercise-1
 
 terraform init
